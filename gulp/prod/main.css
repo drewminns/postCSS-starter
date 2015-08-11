@@ -1,0 +1,146 @@
+/*====================================
+=            AutoPrefixer            =
+====================================*/
+.item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+/*===============================
+=            CSSNext            =
+===============================*/
+
+/*==========  Native Variables  ==========*/
+
+a {
+  color: purple;
+}
+
+/*==========  Custom Media Queries with Ranges  ==========*/
+
+@media (min-width: 500px) and (max-width: 1200px) {
+	body {
+		background: rgb(102, 51, 153);
+	}
+}
+
+/*==========  Custom Selectors  ==========*/
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+input,
+.input,
+.inputField {
+  border: 0;
+}
+
+/*==============================
+=            PreCSS            =
+==============================*/
+
+/*==========  Variables  ==========*/
+
+.square {
+  background: #0000ff;
+  border-radius: 10px;
+}
+
+/*==========  Creating a mixin  ==========*/
+
+/*==========  Nesting, Variables and Mixins  ==========*/
+.button {
+  width: 200px;
+  height: 200px;
+  background: #00ff00;
+}
+.button:hover {
+  background: #0000ff;
+}
+
+
+/*========================================
+=            Quantity Queries            =
+========================================*/
+
+.container > .item:nth-last-child(n+5), .container > .item:nth-last-child(n+5) ~ .item {
+  background: blue;
+}
+
+.item > a:nth-last-child(-n+10):first-child, .item > a:nth-last-child(-n+10):first-child ~ a {
+  color: green;
+}
+
+.gallery > img:nth-last-child(n+4):nth-last-child(-n+7):first-child, .gallery > img:nth-last-child(n+4):nth-last-child(-n+7):first-child ~ img {
+  width: 25%;
+}
+
+.profiles:nth-last-child(4):first-child, .profiles:nth-last-child(4):first-child ~ .profiles {
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          -webkit-box-flex: 1;
+          flex: 1 0 50%;
+}
+
+/*===================================
+=            Retina at2x            =
+===================================*/
+
+.logo {
+  background: red url('/public/images/logo.png') no-repeat 0 0;
+}
+
+/*=====================================
+=            PostCSS-Short            =
+=====================================*/
+
+/*==========  Text  ==========*/
+p {
+  color: dimgrey;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: .05em;
+}
+
+/*==========  Position  ==========*/
+section {
+  position: absolute;
+  top: 10px;
+}
+
+.topNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 40%;
+  right: 25%;
+  bottom: 40%;
+  left: 25%;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .logo {
+    background: red url('/public/images/logo@2x.png') no-repeat 0 0;
+  }
+}
+
+
+
+
+
+

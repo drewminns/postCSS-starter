@@ -1,0 +1,25 @@
+{
+  "name": "postcss-grunt-example",
+  "version": "1.0.0",
+  "description": "PostCSS example for Smashing Magazine by Drew Minns",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/drewminns"
+  },
+  "author": "Drew Minns",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "cssnext": "^1.8.3",
+    "grunt": "^0.4.5",
+    "grunt-postcss": "^0.5.5",
+    "postcss-at2x": "^1.4.0",
+    "postcss-quantity-queries": "^0.3.1",
+    "postcss-short": "^0.3.0",
+    "precss": "^0.3.0"
+  }
+}
