@@ -5,7 +5,6 @@ module.exports = function(grunt) {
     require('cssnext')(),
     require('precss')(),
     require('postcss-quantity-queries')(),
-    require('postcss-at2x')(),
     require('postcss-short')()
   ];
 

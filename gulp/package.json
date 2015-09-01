@@ -17,7 +17,6 @@
     "cssnext": "^1.8.3",
     "gulp": "^3.9.0",
     "gulp-postcss": "^5.1.10",
-    "postcss-at2x": "^1.4.0",
     "postcss-quantity-queries": "^0.3.1",
     "postcss-short": "^0.3.0",
     "precss": "^0.3.0"
