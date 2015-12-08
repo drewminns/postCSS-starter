@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   var processors = [
-    require('autoprefixer-core')({ browsers: ['last 2 versions', 'Firefox > 20']  }),
+    require('autoprefixer')({ browsers: ['last 2 versions', 'Firefox > 20']  }),
     require('cssnext')(),
     require('precss')(),
     require('postcss-quantity-queries')(),
